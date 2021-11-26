@@ -23,17 +23,35 @@
   background: #333;
   padding: 13px 20px;
   border: none;
-  border-radius: 5px;
+
   cursor: pointer;
   transition: all 500ms ease-in-out;
+}
+.btn-light {
+  color: #333;
+  background: #f4f4f4;
 }
 .btn:hover {
   color: #333;
   background: #f7c08a;
-
-  /* animation: all 2s ease-in-out; */
+  border-radius: 10px;
+  transform: scale(1.05);
 }
-
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+.bg-primary {
+  background: #f7c08a;
+  color: #333;
+}
+.clr {
+  clear: both;
+}
 /* Main Styling */
 html,
 body {
@@ -104,4 +122,43 @@ p {
 #showcase .showcase-content p {
   padding-bottom: 20px;
   line-height: 1.7em;
+}
+/* Home Info */
+#home-info {
+  height: 400px;
+}
+#home-info .info-img {
+  float: left;
+  width: 50%;
+  background: url('/img/photo-1.jpg') no-repeat;
+  min-height: 100%;
+}
+#home-info .info-content {
+  float: right;
+  width: 50%;
+  height: 100%;
+  padding: 50px 30px;
+  text-align: center;
+  overflow: hidden;
+}
+#home-info .info-content p {
+  padding-bottom: 30px;
+}
+/* Home Features */
+.box {
+  float: left;
+  height: 300px;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+}
+.box i {
+  padding-bottom: 10px;
+}
+/* Home Footer */
+#main-footer {
+  text-align: center;
+  background: #444;
+  padding: 20px;
+  color: #fff;
 }
