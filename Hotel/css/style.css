@@ -129,7 +129,7 @@ p {
 }
 /* Showcase */
 #showcase {
-  background: url(/img/showcase.jpg) no-repeat center center/cover;
+  background: url('/Hotel/img/showcase.jpg') no-repeat center center/cover;
   min-height: 600px;
 }
 #showcase .showcase-content {
@@ -153,7 +153,7 @@ p {
 #home-info .info-img {
   float: left;
   width: 50%;
-  background: url('/img/photo-1.jpg') no-repeat;
+  background: url('/Hotel/img/photo-1.jpg') no-repeat;
   min-height: 100%;
 }
 #home-info .info-content {
@@ -198,7 +198,7 @@ p {
 #testimonials {
   padding-top: 100px;
   height: 100%;
-  background: url('../img/test-bg.jpg') no-repeat center center/cover;
+  background: url('/Hotel/img/person-1.jpg') no-repeat center center/cover;
   padding-top: 40px;
 }
 #testimonials .testimonial img {
