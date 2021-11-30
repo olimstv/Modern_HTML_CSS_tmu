@@ -136,7 +136,7 @@ p {
 }
 /* Showcase */
 #showcase {
-  background: url('/Hotel/img/showcase.jpg') no-repeat center center/cover;
+  background: url('/img/showcase.jpg') no-repeat center center/cover;
   min-height: 600px;
 }
 #showcase .showcase-content {
@@ -163,7 +163,7 @@ p {
   /* float: left; */
   /* width: 50%; */
   flex: 1;
-  background: url('/Hotel/img/photo-1.jpg') no-repeat;
+  background: url('/img/photo-1.jpg') no-repeat;
   min-height: 100%;
 }
 #home-info .info-content {
@@ -199,8 +199,12 @@ p {
 }
 
 /* About Info */
+#about-info .container {
+  display: flex;
+  justify-content: space-between;
+}
 #about-info .info-right {
-  float: left;
+  /* float: left; */
   min-height: 100%;
   width: 50%;
 }
@@ -210,19 +214,20 @@ p {
   border-radius: 50%;
 }
 #about-info .info-left {
-  float: left;
+  /* float: left; */
   width: 50%;
   min-height: 100%;
 }
 #testimonials {
   padding-top: 100px;
   height: 100%;
-  background: url('/Hotel/img/person-1.jpg') no-repeat center center/cover;
+  background: url('/img/person-1.jpg') no-repeat center center/cover;
   padding-top: 40px;
 }
 #testimonials .testimonial img {
   width: 100px;
   border-radius: 50%;
+  flex-shrink: 0;
 }
 #testimonials h2 {
   color: #fff;
@@ -231,14 +236,16 @@ p {
 }
 
 #testimonials .testimonial {
+  display: flex;
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 40px;
   opacity: 0.9;
 }
 #testimonials .testimonial img {
-  float: left;
+  /* float: left; */
   margin-right: 20px;
+  max-height: 100px;
 }
 /* Contact Form */
 #contact-form .form-group {
@@ -261,6 +268,10 @@ p {
 #contact-form textarea:focus {
   outline: none;
   border-color: #f7c08a;
+}
+#contact-info .container {
+  display: flex;
+  justify-content: space-between;
 }
 /* Footer */
 #main-footer {

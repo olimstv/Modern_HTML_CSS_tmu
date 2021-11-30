@@ -1,15 +1,18 @@
 /* Utils */
-.container {
-  /* padding: 0; */
+.flex-container {
+  flex-direction: column;
+  align-items: stretch;
 }
 
 #navbar .logo {
-  float: none;
+  /* float: none; */
+
   text-align: center;
 }
 #navbar ul,
 #navbar ul li {
-  float: none;
+  /* float: none; */
+  flex-direction: column;
 }
 #navbar ul li a {
   padding: 5px;
@@ -21,6 +24,12 @@
 }
 #showcase .showcase-content {
   padding-top: 70px;
+}
+#features {
+  flex-direction: column;
+}
+#features .box {
+  height: 250px;
 }
 /* Home Info */
 #home-info {
@@ -35,16 +44,21 @@
   height: 100%;
 }
 .box {
-  float: none;
+  /* float: none; */
   width: 100%;
   /* padding: 30px;
   height: 100%; */
 }
 /* About */
-#about-info .info-right,
+#about-info .container {
+  flex-direction: column;
+}
 #about-info .info-left {
-  float: none;
+  /* float: none; */
   width: 100%;
+}
+#about-info .info-right {
+  align-self: center;
 }
 #about-info .info-right img {
   /* border-radius: 0; */
@@ -55,6 +69,9 @@
   text-align: center;
 }
 /* Contact */
+#contact-info .container {
+  flex-direction: column;
+}
 #contact-info .box {
   border-bottom: 1px solid #444;
   height: 100%;
