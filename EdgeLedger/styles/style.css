@@ -138,6 +138,9 @@ img {
   border: #f5f5f5 1px solid;
   padding: 4px;
 }
+.callback-form input:focus {
+  outline-color: #28a745;
+}
 .callback-form .btn {
   margin-top: 23px;
   padding: 12px 0;
@@ -154,6 +157,25 @@ footer {
 .footer .social > * {
   margin-right: 30px;
 }
-footer .flex-columns {
-  justify-content: space-between;
+/* Mobile */
+@media(max-width: 768px){
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+.navbar a {
+  padding: 10px 10px;
+  margin: 0 3px;
+}
+.flex-items {
+  flex-direction: column;
+}
+.flex-columns .column, .flex-grid .column {
+  flex: 100%;
+  max-width: 100%;
+}
+#team img {
+  width: 70%;
+}
 }
