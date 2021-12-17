@@ -42,7 +42,12 @@ img {
   position: fixed;
   top: 0;
   padding: 0 30px;
+  transition: 0.5s;
 }
+.navbar.top {
+  background: transparent;
+}
+
 .navbar li {
   height: 100%;
 }
@@ -101,10 +106,6 @@ img {
 .hero.blog {
   background: URL("../img/home/blog.jpg") no-repeat center center/cover;
   height: 30vh;
-}
-
-#blog > div#navbar {
-  background: transparent !important;
 }
 
 /* Icons */
