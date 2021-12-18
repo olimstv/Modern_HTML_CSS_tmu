@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('./utilities.css');
 /* CSS Reset */
 * {
   box-sizing: border-box;
@@ -7,15 +8,15 @@
 }
 body {
   font-family: 'Open Sans', sans-serif;
-  background: #fff;
-  color: #333;
+  background: var(--text-color-light);
+  color: var(--dark-color);
   line-height: 1.6;
 }
 ul {
   list-style: none;
 }
 a {
-  color: #333;
+  color: var(--dark-color);
   text-decoration: none;
 }
 h1,
@@ -34,8 +35,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #333;
-  color: #fff;
+  background: var(--dark-color);
+  color: var(--text-color-light);
   opacity: 0.8;
   width: 100%;
   height: 70px;
@@ -52,12 +53,12 @@ img {
   height: 100%;
 }
 .navbar a {
-  color: #fff;
+  color: var(--text-color-light);
   padding: 10px 20px;
   margin: 0 5px;
 }
 .navbar a:hover {
-  border-bottom: 2px solid #28a745;
+  border-bottom: 2px solid var(--primary-color);
 }
 .navbar ul {
   display: flex;
@@ -71,7 +72,7 @@ img {
   background: url('/img/home/showcase.jpg') no-repeat center center/cover;
   height: 100vh;
   position: relative;
-  color: #fff;
+  color: var(--text-color-light);
 }
 .hero .content {
   display: flex;
@@ -117,8 +118,8 @@ img {
   margin-bottom: 15px;
 }
 .icons i {
-  background: #28a745;
-  color: #fff;
+  background: var(--primary-color);
+  color: var(--text-color-light);
   padding: 1rem;
   border-radius: 50%;
   margin-bottom: 15px;
@@ -149,7 +150,7 @@ img {
   padding: 4px;
 }
 .callback-form input:focus {
-  outline-color: #28a745;
+  outline-color: var(--primary-color);
 }
 .callback-form .btn {
   margin-top: 23px;
@@ -177,10 +178,10 @@ footer {
   height: 200px;
 }
 .footer a {
-  color: #fff;
+  color: var(--text-color-light);
 }
 .footer a:hover {
-  color: #28a745;
+  color: var(--primary-color);
 }
 .footer .social > * {
   margin-right: 30px;
