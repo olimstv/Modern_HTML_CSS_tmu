@@ -1,3 +1,13 @@
+/* Vars */
+:root {
+  --primary-color: #f7c08a;
+  --dark-color:#444;
+  --darker-color:#333;
+  --light-color: #f4f4f4;
+  --text-light: #fff;
+  --max-width: 1100px;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 /* Reset */
 * {
   margin: 0;
@@ -6,21 +16,21 @@
 }
 /* Utility Classes */
 .container {
-  max-width: 1100px;
+  max-width: var(--max-width);
   overflow: auto;
   margin: auto;
   padding: 0 20px;
 }
 .text-primary {
-  color: #f7c08a;
+  color: var(--primary-color);
 }
 .lead {
   font-size: 20px;
 }
 .btn {
   display: inline-block;
-  color: #fff;
-  background: #333;
+  color: var(--text-light);
+  background: var(--darker-color);
   padding: 13px 20px;
   border: none;
 
@@ -28,26 +38,26 @@
   transition: all 500ms ease-in-out;
 }
 .btn-light {
-  color: #333;
-  background: #f4f4f4;
+  color: var(--darker-color);
+  background: var(--light-color);
 }
 .btn:hover {
-  color: #333;
-  background: #f7c08a;
+  color: var(--darker-color);
+  background: var(--primary-color);
   border-radius: 10px;
   transform: scale(1.05);
 }
 .bg-dark {
-  background: #333;
-  color: #fff;
+  background: var(--darker-color);
+  color: var(--text-light);
 }
 .bg-light {
-  background: #f4f4f4;
-  color: #333;
+  background: var(--light-color);
+  color: var(--darker-color);
 }
 .bg-primary {
-  background: #f7c08a;
-  color: #333;
+  background: var(--primary-color);
+  color: var(--darker-color);
 }
 .clr {
   clear: both;
@@ -78,11 +88,11 @@
 /* Main Styling */
 html,
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--font-family);
   line-height: 1.7em;
 }
 a {
-  color: #333;
+  color: var(--darker-color);
   text-decoration: none;
 }
 h1,
@@ -95,12 +105,12 @@ p {
 }
 /* Navbar */
 #navbar {
-  background: #333;
-  color: #fff;
+  background: var(--darker-color);
+  color: var(--text-light);
   overflow: auto;
 }
 #navbar a {
-  color: #fff;
+  color: var(--text-light);
 }
 #navbar .logo {
   /* float: left; */
@@ -108,7 +118,7 @@ p {
 }
 #navbar h1 a:hover {
   transition: all 500ms ease-in-out;
-  color: #f7c08a;
+  color: var(--primary-color);
 }
 #navbar ul {
   list-style: none;
@@ -126,8 +136,8 @@ p {
 }
 #navbar ul li a:hover,
 #navbar a.current {
-  color: #f7c08a;
-  background-color: #444;
+  color: var(--primary-color);
+  background-color: var(--dark-color);
 }
 .flex-container {
   display: flex;
@@ -140,7 +150,7 @@ p {
   min-height: 600px;
 }
 #showcase .showcase-content {
-  color: #fff;
+  color: var(--text-light);
   text-align: center;
   padding-top: 170px;
 }
@@ -212,6 +222,7 @@ p {
   display: block;
   width: 70%;
   border-radius: 50%;
+  
 }
 #about-info .info-left {
   /* float: left; */
@@ -230,7 +241,7 @@ p {
   flex-shrink: 0;
 }
 #testimonials h2 {
-  color: #fff;
+  color: var(--text-light);
   text-align: center;
   margin-top: 30px;
 }
@@ -267,7 +278,7 @@ p {
 #contact-form input:focus,
 #contact-form textarea:focus {
   outline: none;
-  border-color: #f7c08a;
+  border-color: var(--primary-color);
 }
 #contact-info .container {
   display: flex;
@@ -276,9 +287,9 @@ p {
 /* Footer */
 #main-footer {
   text-align: center;
-  background: #444;
+  background: var(--dark-color);
   padding: 20px;
-  color: #fff;
+  color: var(--text-light);
 }
 
 /* Media Query: Mobile Landscape*/
