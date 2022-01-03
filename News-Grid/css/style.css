@@ -74,6 +74,33 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     text-align: center;
 }
+.card {
+    background: #fff;
+    padding: 1rem;
+}
+.bg-dark {
+    background: var(--dark-color);
+}
+.bg-primary {
+    background: var(--primary-color);
+}
+.bg-secondary {
+    background: var(--secondary-color);
+}
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark p,
+.bg-dark a,
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary p,
+.bg-primary a,
+.bg-secondary h1,
+.bg-secondary h2,
+.bg-secondary p,
+.bg-secondary a {
+    color: #fff;
+}
 /* Navbar */
 #main-nav {
     background: #fff;
@@ -144,3 +171,19 @@ h1, h2, h3, h4, h5, h6 {
 #showcase .showcase-content p {
     margin-bottom: 1rem;
 }
+/* Home Articles */
+#home-articles .articles-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+#home-articles .articles-container > *:first-child,
+#home-articles .articles-container > *:last-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    
+}
+#home-articles .articles-container > *:first-child {grid-column: 1 / span 2;}
+#home-articles .articles-container > *:last-child {grid-column: 2 / span 2;}
