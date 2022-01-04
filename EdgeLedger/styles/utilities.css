@@ -1,17 +1,25 @@
+/* Vars */
+:root {
+    --primary-color: #28a745;
+    --secondary-color: #0284d0;
+    --dark-color: #333;
+    --light-color: #f4f4f4;
+    --text-color-light: #fff;
+}
 /* Text colors */
 .text-primary {
-    color: #28a745;
+    color: var(--primary-color);
 }
 .text-secondary {
-    color: #0284d0;
+    color: var(--secondary-color);
 }
 /* Button */
 .btn {
     cursor: pointer;
     display: inline-block;
     padding: 10px 30px;
-    color:#fff;
-    /* background-color: #28a745; */
+    color:var(--text-color-light);
+    /* background-color: var(--primary-color); */
     border: none;
     border-radius: 5px;
 }
@@ -19,23 +27,23 @@
     opacity: 0.9;
 }
 .btn-primary, .bg-primary {
-    background-color: #28a745;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
 }
 .btn-secondary, .bg-secondary {
-    background-color: #0284d0;
-    color: #fff;
+    background-color: var(--secondary-color);
+    color: var(--text-color-light);
 }
 .btn-dark, .bg-dark {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--dark-color);
+    color: var(--text-color-light);
 }
 .btn-light, .bg-light {
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: var(--light-color);
+    color: var(--dark-color);
 }
 .btn-outline {
-    border: 1px solid #fff
+    border: 1px solid #fff;
 }
 /* Flex */
 .flex-items {
