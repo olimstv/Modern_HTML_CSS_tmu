@@ -159,8 +159,8 @@ p {
     color: var(--primary-color);
 }
 #main-nav ul {
-    justify-self: end;
     display: flex;
+    justify-self: end;
 }
 #main-nav ul li a {
     background: var(--light-color);
